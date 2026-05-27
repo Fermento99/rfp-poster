@@ -1,4 +1,6 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
   position: relative;
   box-sizing: border-box;
 }
@@ -7,8 +9,79 @@ body {
   text-align: center;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0.25em 0;
+}
+
 .band-entry {
   display: flex;
-  gap: 0.5em;
+  gap: 1em;
   justify-content: center;
+  align-items: center;
+}
+
+.band-entry_name {
+  display: inline-block;
+  font-family: 'Germania One', system-ui;
+  line-height: 1em;
+}
+
+.day_container {
+  display: flex;
+  flex-wrap: wrap;
+  page-break-after: always;
+}
+
+.day_title {
+  position: absolute;
+  font-family: 'Alfa Slab One', serif;
+}
+
+.stage_title {
+  font-size: 1.25em;
+  font-family: 'New Rocker', system-ui;
+  margin-bottom: 0.5em;
+}
+
+.stage_containter {
+  margin: 1rem;
+}
+
+.stage_size-large {
+  flex-basis: 100%;
+  font-size: 22px;
+}
+
+.stage_size-big {
+  flex-basis: calc(50% - 2rem);
+  font-size: 18px;
+}
+
+.stage_size-medium {
+  flex-basis: calc(50% - 2rem);
+  font-size: 16px;
+}
+
+.stage_size-small {
+  flex-basis: calc(33% - 2rem);
+  font-size: 14px;
+}
+
+.band-entry_time {
+  white-space: nowrap;
+  font-size: 0.75em;
+  font-family: monospace;
+}
+
+.band-entry_time > sup {
+  margin-left: 0.1em;
+  text-decoration: underline;
+}
+@media print {
+  .only-web {
+    display: none;
+  }
 }

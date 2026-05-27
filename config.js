@@ -1,5 +1,5 @@
 const CONFIG = {
-  "stages": {
+  stageSizes: {
     "Mastercard Stage": "large",
     "Rock for People Stage": "big",
     "E2 Stage": "big",

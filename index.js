@@ -25,7 +25,10 @@ const createBandEntry = (name, start, end) => {
   const tiemEl = document.createElement('p');
   tiemEl.classList.add('band-entry_time');
 
-  tiemEl.innerText = `${start} - ${end}`;
+  const [hourStart, minuteStart] = start.split(':');
+  const [hourEnd, minuteEnd] = end.split(':');
+
+  tiemEl.innerHTML = `${hourStart}<sup>${minuteStart}</sup> - ${hourEnd}<sup>${minuteEnd}</sup>`;
   nameEl.innerText = name;
 
   entryContainer.insertAdjacentElement('beforeend', tiemEl);
@@ -36,7 +39,7 @@ const createBandEntry = (name, start, end) => {
 
 const createStageContainter = (name, data) => {
   const stageContainer = document.createElement('div');
-  stageContainer.classList.add(`stage_size-${CONFIG[name]}`);
+  stageContainer.classList.add(`stage_size-${CONFIG.stageSizes[name]}`, 'stage_containter');
 
   const stageTitleEl = createStageTitle(name);
   const bandEntries = data.map(({ band_name, start, end }) =>
