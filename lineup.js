@@ -1,4 +1,4 @@
-const linup = [
+const LINEUP = [
 	{"day": "Wednesday 10. 6.", "stage": "Mastercard Stage", "start": "13:40", "end": "14:25", "band_name": "MAGNOLIA PARK"},
 	{"day": "Wednesday 10. 6.", "stage": "Mastercard Stage", "start": "15:35", "end": "16:35", "band_name": "THE WOMBATS"},
 	{"day": "Wednesday 10. 6.", "stage": "Mastercard Stage", "start": "18:10", "end": "19:25", "band_name": "THE PRETTY RECKLESS"},
@@ -200,5 +200,5 @@ const linup = [
 	{"day": "Sunday 14. 6.", "stage": "EcoFlow Stage", "start": "19:35", "end": "20:15", "band_name": "THE ATAVISTS"},
 	{"day": "Sunday 14. 6.", "stage": "EcoFlow Stage", "start": "23:15", "end": "00:00", "band_name": "N.O.H.A."},
 	{"day": "Sunday 14. 6.", "stage": "Karaoke Stage", "start": "10:10", "end": "10:50", "band_name": "HOLLOW SUNS"},
-	{"day": "Sunday 14. 6.", "stage": "Karaoke Stage", "start": "11:30", "end": "12:10", "band_name": "EXCIDE"}
-]
+	{"day": "Sunday 14. 6.", "stage": "Karaoke Stage", "start": "11:30", "end": "12:10", "band_name": "EXCIDE"},
+];

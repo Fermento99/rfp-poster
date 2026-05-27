@@ -1,4 +1,4 @@
-const config = {
+const CONFIG = {
   "stages": {
     "Mastercard Stage": "large",
     "Rock for People Stage": "big",
@@ -7,6 +7,6 @@ const config = {
     "ČT art Stage": "medium",
     "Reflex Stage": "small",
     "EcoFlow Stage": "small",
-    "Karaoke Stage": "small"
-  }
-}
+    "Karaoke Stage": "small",
+  },
+};
